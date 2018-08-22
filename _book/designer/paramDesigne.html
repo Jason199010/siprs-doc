@@ -1,0 +1,557 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4.2.参数设计 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../stoneDev/" />
+    
+    
+    <link rel="prev" href="modelDesigne.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1.概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../architecture.html">
+            
+                <a href="../architecture.html">
+            
+                    
+                    2.架构原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../feature/">
+            
+                <a href="../feature/">
+            
+                    
+                    3.功能介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../feature/stone.html">
+            
+                <a href="../feature/stone.html">
+            
+                    
+                    3.1.执行器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../feature/model.html">
+            
+                <a href="../feature/model.html">
+            
+                    
+                    3.2.流程模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../feature/process.html">
+            
+                <a href="../feature/process.html">
+            
+                    
+                    3.3.流程实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    4.流程设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="modelDesigne.html">
+            
+                <a href="modelDesigne.html">
+            
+                    
+                    4.1.模型设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="paramDesigne.html">
+            
+                <a href="paramDesigne.html">
+            
+                    
+                    4.2.参数设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../stoneDev/">
+            
+                <a href="../stoneDev/">
+            
+                    
+                    5.执行器开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../stoneDev/javaSDK.html">
+            
+                <a href="../stoneDev/javaSDK.html">
+            
+                    
+                    5.1.JavaSDk
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../api/">
+            
+                <a href="../api/">
+            
+                    
+                    6.SipRS API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../api/process.html">
+            
+                <a href="../api/process.html">
+            
+                    
+                    6.1. process相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../api/task.html">
+            
+                <a href="../api/task.html">
+            
+                    
+                    6.2. task相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4.2.参数设计</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="42&#x53C2;&#x6570;&#x8BBE;&#x8BA1;">4.2.&#x53C2;&#x6570;&#x8BBE;&#x8BA1;</h1>
+<p>&#x5047;&#x8BBE;&#x4F60;&#x5DF2;&#x7ECF;&#x8BBE;&#x8BA1;&#x597D;&#x4E86;&#x4E00;&#x4E2A;&#x6D41;&#x7A0B;&#x6A21;&#x578B;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5DF2;&#x7ECF;&#x80FD;&#x591F;&#x901A;&#x8FC7;API&#x4F20;&#x5165;&#x4E00;&#x4EFD;json&#x7ED3;&#x6784;&#x7684;&#x53C2;&#x6570;&#x6570;&#x636E;&#xFF0C;&#x4EE5;&#x542F;&#x52A8;&#x6D41;&#x7A0B;&#xFF0C;&#x5230;&#x8FD9;&#x91CC;&#x5DF2;&#x7ECF;&#x8DB3;&#x591F;&#x4E86;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x5982;&#x679C;&#x8FD8;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x7533;&#x8BF7;&#x9875;&#x9762;&#x6765;&#x6536;&#x96C6;&#x6D41;&#x7A0B;&#x7684;&#x542F;&#x52A8;&#x53C2;&#x6570;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x6A21;&#x677F;&#x7684;&#x5B9A;&#x4E49;&#x6765;&#x52A8;&#x6001;&#x6E32;&#x67D3;&#x53C2;&#x6570;&#x9875;&#x9762;&#x3002;</p>
+<p><img src="../img/paramRender.png" alt="img"></p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x5FC5;&#x586B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>Yes</td>
+<td>&#x53C2;&#x6570;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>DisplayName</td>
+<td>Yes</td>
+<td>&#x663E;&#x793A;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>Yes</td>
+<td>String,Number,&#x53CA;&#x5176;&#x4ED6;&#x5404;&#x7C7B;&#x52A8;&#x6001;&#x6570;&#x636E;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>NoEcho</td>
+<td>No</td>
+<td>&#x5982;&#x679C;&#x4E3A; TRUE&#xFF0C;&#x5219;&#x4F7F;&#x7528; aws cloudformation describe-stacks&#x65F6;&#xFF0C;&#x53C2;&#x6570;&#x503C;&#x5C06;&#x4F7F;&#x7528;&#x661F;&#x53F7; (<strong>*</strong>) &#x8FDB;&#x884C;&#x906E;&#x853D;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;FALSE&#x3002;</td>
+</tr>
+<tr>
+<td>AllowedValues</td>
+<td>No</td>
+<td>&#x5305;&#x542B;&#x53C2;&#x6570;&#x5141;&#x8BB8;&#x503C;&#x5217;&#x8868;&#x7684;&#x9635;&#x5217;&#x3002; &#x683C;&#x5F0F;&#x4E3A;&#x6570;&#x7EC4;&#xFF0C;&#x5982;&#xFF1A;[&quot;vpc&quot;, &apos;region&apos;, &quot;project&quot;]</td>
+</tr>
+<tr>
+<td>AllowedPattern</td>
+<td>No</td>
+<td>String &#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x3002;&#x5BF9;&#x53C2;&#x6570;&#x503C;&#x6240;&#x5141;&#x8BB8;&#x7684;&#x683C;&#x5F0F;&#x8FDB;&#x884C;&#x6821;&#x9A8C;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x3002; &#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x662F;&#x5B57;&#x4E32;&#xFF0C;&#x8F6C;&#x6362;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x8BF7;&#x4F7F;&#x7528; &#x201C;\&#x201D;&#xFF0C;&#x5982;&#xFF1A;&#x201C;\.&#x201D; &#x53EF;&#x4EE5;&#x5339;&#x914D;&#x5B57;&#x7B26; &#x201C;.&#x201D;</td>
+</tr>
+<tr>
+<td>MaxLength</td>
+<td>No</td>
+<td>String &#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x3002;&#x51B3;&#x5B9A;&#x53C2;&#x6570;&#x5B57;&#x7B26;&#x4E32;&#x503C;&#x4E2D;&#x6700;&#x5927;&#x5B57;&#x7B26;&#x6570;&#x7684;&#x6574;&#x6570;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td>MinLength</td>
+<td>No</td>
+<td>String &#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x3002;&#x51B3;&#x5B9A;&#x53C2;&#x6570;&#x5B57;&#x7B26;&#x4E32;&#x503C;&#x4E2D;&#x6700;&#x5C0F;&#x5B57;&#x7B26;&#x6570;&#x7684;&#x6574;&#x6570;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td>MaxValue</td>
+<td>No</td>
+<td>Number &#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x3002;&#x51B3;&#x5B9A;&#x53C2;&#x6570;&#x6700;&#x5927;&#x5141;&#x8BB8;&#x6570;&#x503C;&#x7684;&#x6570;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td>MinValue</td>
+<td>No</td>
+<td>Number &#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x3002;&#x51B3;&#x5B9A;&#x53C2;&#x6570;&#x6700;&#x5C0F;&#x5141;&#x8BB8;&#x6570;&#x503C;&#x7684;&#x6570;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>No</td>
+<td>&#x7528;&#x4E8E;&#x8BF4;&#x660E;&#x53C2;&#x6570;&#x7684; String &#x7C7B;&#x578B;&#xFF08;&#x6700;&#x591A;&#x4E3A; 4000 &#x4E2A;&#x5B57;&#x7B26;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>ConstraintDescription</td>
+<td>No</td>
+<td>&#x7528;&#x4E8E;&#x89E3;&#x91CA;&#x53D1;&#x751F;&#x7EA6;&#x675F;&#x8FDD;&#x4F8B;&#x65F6;&#x663E;&#x793A;&#x7684;&#x7EA6;&#x675F;&#x8981;&#x6C42;&#x7684; String &#x7C7B;&#x578B;&#x3002;</td>
+</tr>
+<tr>
+<td>AllowedCustomization</td>
+<td>No</td>
+<td>&#x5982;&#x679C;&#x4E3A;TRUE,&#x5219;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x4FEE;&#x6539;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;TRUE</td>
+</tr>
+<tr>
+<td>DefaultValue</td>
+<td>No</td>
+<td>&#x9ED8;&#x8BA4;&#x7684;&#x53C2;&#x6570;&#x503C;&#x3002;&#x5982;&#x679C;&#x4E3A;Ref:&#x5F00;&#x5934;&#xFF0C;&#x5219;&#x4E3A;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#xFF0C;&#x4ECE;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x53D6;&#x503C;</td>
+</tr>
+<tr>
+<td>NameSpace</td>
+<td>No</td>
+<td>&#x53C2;&#x6570;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x4E0D;&#x540C;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x53C2;&#x6570;&#x4E92;&#x76F8;&#x9694;&#x79BB;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x53C2;&#x6570;&#x6A21;&#x677F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;json&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x7EF4;&#x62A4;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>[
+  {
+    &quot;Key&quot;: &quot;projectId&quot;,
+    &quot;Type&quot;: &quot;Bingo::Project::Id&quot;,
+    &quot;DefaultValue&quot;: &quot;11111&quot;,
+    &quot;DisplayName&quot;: &quot;&#x9879;&#x76EE;&quot;,
+    &quot;Fn::Source&quot;: {
+      &quot;userMode&quot;: &quot;buy&quot;,
+      &quot;showRegion&quot;: true
+    }
+  },
+  {
+    &quot;Key&quot;: &quot;regionId&quot;,
+    &quot;Type&quot;: &quot;Bingo::Cloud::Region&quot;,
+    &quot;DefaultValue&quot;: &quot;bcc&quot;,
+    &quot;DisplayName&quot;: &quot;&#x533A;&#x57DF;&quot;,
+    &quot;Fn::Source&quot;: {}
+  },
+  {
+    &quot;Key&quot;: &quot;vpcId&quot;,
+    &quot;Type&quot;: &quot;Bingo::EC2::Vpc::Id&quot;,
+    &quot;DefaultValue&quot;: &quot;&quot;,
+    &quot;DisplayName&quot;: &quot;&#x7F51;&#x7EDC;&quot;,
+    &quot;Fn::Source&quot;: {
+      &quot;regionId&quot;: &quot;Ref:regionId&quot;,
+      &quot;vdcId&quot;: &quot;Ref:projectId&quot;
+    }
+  }]
+</code></pre><h4 id="&#x52A8;&#x6001;&#x6570;&#x636E;&#x6E90;">&#x52A8;&#x6001;&#x6570;&#x636E;&#x6E90;</h4>
+<p>&#x5982;&#x679C;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x4E3A;&#x52A8;&#x6001;&#x6570;&#x636E;&#x6E90;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x7528;<code>Fn::Source</code>&#x6765;&#x5B9A;&#x4E49;&#x5176;&#x53C2;&#x6570;&#xFF1B;&#x53EF;&#x4EE5;&#x7528;<code>Ref&#xFF1A;</code>&#x6765;&#x5F15;&#x7528;&#x5F53;&#x524D;&#x6536;&#x96C6;&#x9875;&#x9762;&#x7684;&#x5176;&#x4ED6;&#x53C2;&#x6570;&#xFF0C;&#x5F62;&#x6210;&#x7EA7;&#x8054;&#x5173;&#x7CFB;&#x3002;</p>
+<h4 id="&#x5173;&#x4E8E;outputs">&#x5173;&#x4E8E;outputs</h4>
+<p>&#x8F93;&#x51FA;&#x53C2;&#x6570;&#x540C;&#x6837;&#x7528;json&#x6570;&#x7EC4;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre><code>[
+  {
+    &quot;Key&quot;: &quot;port&quot;,
+    &quot;DisplayName&quot;: &quot;&#x7AEF;&#x53E3;&quot;,
+    &quot;Value&quot;: &quot;${parameters.port}&quot;
+  }
+]
+</code></pre><p>&#x8FD9;&#x91CC;&#x7684;&#x8F93;&#x51FA;&#xFF0C;&#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x6D41;&#x7A0B;&#x5B9E;&#x4F8B;&#x7684;&#x6700;&#x7EC8;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF0C;&#x5176;&#x4E2D;&#x7684;Value&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x6D41;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x6240;&#x6709;&#x53D8;&#x91CF;&#xFF0C;&#x5305;&#x62EC;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="modelDesigne.html" class="navigation navigation-prev " aria-label="Previous page: 4.1.模型设计">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../stoneDev/" class="navigation navigation-next " aria-label="Next page: 5.执行器开发">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4.2.参数设计","level":"1.4.2","depth":2,"next":{"title":"5.执行器开发","level":"1.5","depth":1,"path":"stoneDev/README.md","ref":"stoneDev/README.md","articles":[{"title":"5.1.JavaSDk","level":"1.5.1","depth":2,"path":"stoneDev/javaSDK.md","ref":"stoneDev/javaSDK.md","articles":[]}]},"previous":{"title":"4.1.模型设计","level":"1.4.1","depth":2,"path":"designer/modelDesigne.md","ref":"designer/modelDesigne.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"designer/paramDesigne.md","mtime":"2018-08-21T06:47:59.710Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-22T07:30:49.800Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
